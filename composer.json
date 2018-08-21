@@ -1,0 +1,11 @@
+{
+    "name": "wenjy/hello",
+    "description": "hello world",
+    "authors": [
+        {
+            "name": "wenyi",
+            "email": "wenjy1314@gmail.com"
+        }
+    ],
+    "require": {}
+}
