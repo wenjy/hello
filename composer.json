@@ -7,5 +7,22 @@
             "email": "wenjy1314@gmail.com"
         }
     ],
-    "require": {}
+    "require": {
+        "php": ">=7.0"
+    },
+    "require-dev": {
+        "phpunit/phpunit": "7.0.0"
+    },
+    "autoload": {
+        "psr-4": {
+            "Hello\\": "src/"
+        },
+        "files": [
+        ]
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "Hello\\Tests\\": "tests/"
+        }
+    }
 }
