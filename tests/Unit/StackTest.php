@@ -11,16 +11,36 @@ use Hello\Tests\TestCase;
  */
 class StackTest extends TestCase
 {
-    public function testPushAndPop()
+    protected $stack;
+
+    /**
+     * 测试类的每个测试方法都会运行一次 setUp() 和 tearDown() 模板方法
+     * （同时，每个测试方法都是在一个全新的测试类实例上运行的）
+     * @author jiangyi
+     */
+    protected function setUp()
     {
-        $stack = [];
-        $this->assertEquals(0, count($stack));
+        $this->stack = [];
+    }
 
-        array_push($stack, 'foo');
-        $this->assertEquals('foo', $stack[count($stack)-1]);
-        $this->assertEquals(1, count($stack));
+    public function testEmpty()
+    {
+        $this->assertTrue(empty($this->stack));
+    }
 
-        $this->assertEquals('foo', array_pop($stack));
-        $this->assertEquals(0, count($stack));
+    public function testPush()
+    {
+        $this->assertEquals(0, count($this->stack));
+
+        array_push($this->stack, 'foo');
+        $this->assertEquals('foo', $this->stack[count($this->stack)-1]);
+        $this->assertEquals(1, count($this->stack));
+    }
+
+    public function testPop()
+    {
+        array_push($this->stack, 'foo');
+        $this->assertEquals('foo', array_pop($this->stack));
+        $this->assertTrue(empty($this->stack));
     }
 }
