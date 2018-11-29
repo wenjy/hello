@@ -79,12 +79,13 @@ class SubjectTest
 
         $observer->expects($this->once())
             ->method('reportError')
-            ->with($this->greaterThan(0),
+            ->with(
+                $this->greaterThan(0),
                 $this->stringContains('Something'),
-                $this->callback(function($subject){
-                    return is_callable([$subject, 'getName']) &&
-                        $subject->getName() == 'My subject';
-                }));
+                $this->callback(function ($subject) {
+                    return is_callable([$subject, 'getName']) && $subject->getName() == 'My subject';
+                })
+            );
 
         $subject = new Subject('My subject');
         $subject->attach($observer);

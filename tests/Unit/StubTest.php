@@ -82,7 +82,7 @@ class StubTest extends TestCase
         // 创建从参数到返回值的映射。
         $map = [
             ['a', 'b', 'c', 'd', 'i'],
-            ['e', 'f', 'g', 'h']
+            ['e', 'f', 'g', 'h'],
         ];
 
         // 配置桩件。
@@ -112,5 +112,4 @@ class StubTest extends TestCase
         // $stub->doSomething($argument) 返回 str_rot13($argument)
         $this->assertEquals('fbzrguvat', $stub->doSomething('something'));
     }
-
 }

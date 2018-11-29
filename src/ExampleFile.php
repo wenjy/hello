@@ -6,7 +6,6 @@
 
 namespace Hello;
 
-
 class ExampleFile
 {
     protected $id;

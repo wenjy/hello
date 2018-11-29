@@ -6,7 +6,6 @@
 
 namespace Hello\Tests\Unit;
 
-
 use Hello\CsvFileIterator;
 use Hello\Tests\TestCase;
 
@@ -49,6 +48,6 @@ class DataTest extends TestCase
      */
     public function additionProviderIterator()
     {
-        return new CsvFileIterator(STUBS_ROOT.'/files/data.csv');
+        return new CsvFileIterator(STUBS_ROOT . '/files/data.csv');
     }
 }

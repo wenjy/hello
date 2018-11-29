@@ -10,5 +10,4 @@ trait AbstractTrait
     }
 
     public abstract function abstractMethod();
-
 }

@@ -18,7 +18,8 @@ class GoogleTest extends TestCase
     public function testSearch()
     {
         $googleSearch = $this->getMockFromWsdl(
-            STUBS_ROOT.'/files/GoogleSearch.wsdl', 'GoogleSearch'
+            STUBS_ROOT . '/files/GoogleSearch.wsdl',
+            'GoogleSearch'
         );
 
         $directoryCategory = new \stdClass;
