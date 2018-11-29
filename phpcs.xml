@@ -16,6 +16,7 @@
     <file>tests</file>
 
     <exclude-pattern>tests/stubs</exclude-pattern>
+    <exclude-pattern>tests/bootstrap.php</exclude-pattern>
 
     <arg value="sp"/>
     <arg name="colors"/>
