@@ -8,6 +8,9 @@ namespace Hello;
 
 class SomeClass
 {
+    public $id;
+    public static $staticId;
+
     public function doSomething()
     {
         // 随便做点什么。
