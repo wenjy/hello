@@ -12,12 +12,6 @@
         <exclude name="Squiz.ControlStructures.ControlSignature.SpaceAfterCloseBrace"/>
     </rule>
 
-    <rule ref="Generic.Files.LineEndings">
-        <properties>
-            <property name="eolChar" value="\r\n"/>
-        </properties>
-    </rule>
-
     <file>src</file>
     <file>tests</file>
 
