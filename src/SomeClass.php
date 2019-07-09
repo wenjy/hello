@@ -15,4 +15,9 @@ class SomeClass
     {
         // 随便做点什么。
     }
+
+    public function getId()
+    {
+        return $this->id;
+    }
 }

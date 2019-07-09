@@ -33,7 +33,7 @@ class StringMatchesFormatTest extends TestCase
      */
     public function testByE()
     {
-        $this->assertStringMatchesFormat('%e', '/');
+        $this->assertStringMatchesFormat('%e', DIRECTORY_SEPARATOR);
     }
 
     /**
