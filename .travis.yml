@@ -11,6 +11,7 @@ before_script:
 
 after_script:
   - wget https://scrutinizer-ci.com/ocular.phar
+  - mkdir -p build/logs
   - php ocular.phar code-coverage:upload --format=php-clover ./build/logs/clover.xml
 
 script:
