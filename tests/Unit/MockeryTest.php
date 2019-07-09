@@ -6,7 +6,6 @@
 
 namespace Hello\Tests\Unit;
 
-use Hello\SomeClass;
 use Hello\Tests\TestCase;
 
 class MockeryTest extends TestCase
@@ -69,7 +68,7 @@ class MockeryTest extends TestCase
         $mock->shouldReceive('name_of_method_3')
             ->withAnyArgs();
 
-        $this->assertNull($mock->name_of_method_3(1,2,3));
+        $this->assertNull($mock->name_of_method_3(1, 2, 3));
 
         $object = new \stdClass();
         $mock->shouldReceive('name_of_method_4')

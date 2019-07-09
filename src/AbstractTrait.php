@@ -9,5 +9,5 @@ trait AbstractTrait
         return $this->abstractMethod();
     }
 
-    public abstract function abstractMethod();
+    abstract public function abstractMethod();
 }
