@@ -8,10 +8,10 @@ before_script:
   - composer install --prefer-source --no-interaction --dev
   - ./vendor/bin/phplint
   - ./vendor/bin/phpcs
+  - mkdir -p ./build/logs
 
 after_script:
   - wget https://scrutinizer-ci.com/ocular.phar
-  - mkdir -p build/logs
   - php ocular.phar code-coverage:upload --format=php-clover ./build/logs/clover.xml
 
 script:
